@@ -2,19 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Video Menacer</title>
+  <title>Menacer Optic Videos</title>
   <style>
     body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
       background-color: #111;
-      margin: 0;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 100%;
+      max-width: 800px;
     }
     video {
-      width: 80%;
-      max-width: 800px;
+      width: 100%;
       border: 4px solid #fff;
       border-radius: 10px;
       box-shadow: 0 0 30px rgba(0,0,0,0.6);
@@ -22,9 +33,16 @@
   </style>
 </head>
 <body>
-  <video controls>
-    <source src="video%20menacer.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <h1>Menacer Optic Videos</h1>
+  <div class="video-container">
+    <video controls>
+      <source src="video%20menacer.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video controls>
+      <source src="video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 </body>
 </html>
